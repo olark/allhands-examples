@@ -25,13 +25,25 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="assets/js/app.js"></script>
 
+    <script>
+      // You can find your site id at the URL below
+      // https://www.olark.com/settings/code
+      var OLARK_SITE_ID = '0000-000-00-0000'
+    </script>
+
   </head>
 
   <body>
 
     <div class="container">
       <div class="header">
-        <a href="#chat" class="btn btn-default pull-right">Contact Us</a>
+        <a href="#chat" 
+           class="btn btn-default pull-right chat-status"
+           data-topic="General"
+           data-available="Chat now!"
+           data-away="Contact Us">
+          Contact Us
+        </a>
         <ul class="nav nav-pills pull-right">
           <li><a href="/">Home</a></li>
           <li class="active"><a href="/about.html">About</a></li>
@@ -48,10 +60,21 @@
       <div class="row marketing">
         <div class="col-lg-6">
           <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+            <a href="#" 
+               class="btn btn-default chat-status"
+               data-topic="billing"
+               data-available="Billing Questions? Chat now!"
+               data-away="Billing Questions?">
+              Billing Questions?
+            </a>
+          </p>
 
           <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <p>
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+          </p>
 
           <h4>Subheading</h4>
           <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
@@ -59,7 +82,16 @@
 
         <div class="col-lg-6">
           <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+            <a href="#" 
+               class="btn btn-default chat-status"
+               data-topic="support"
+               data-available="Support Questions? Chat now!"
+               data-away="Support Questions?">
+              Support Questions?
+            </a>
+          </p>
 
           <h4>Subheading</h4>
           <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -114,7 +146,7 @@
       b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
       loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
       /* custom configuration goes here (www.olark.com/documentation) */
-      olark.identify('4714-938-10-1958');/*]]>*/
+      olark.identify(OLARK_SITE_ID);/*]]>*/
     </script><noscript><a href="https://www.olark.com/site/9353-431-10-4341/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
     <!-- end olark code -->
 
