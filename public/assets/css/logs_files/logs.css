@@ -1,0 +1,25 @@
+body {
+  font-family: 'courier';
+}
+
+.searchbar {
+  width: 210px;
+}
+
+td.log {
+  vertical-align: top;
+  padding: 7px;
+  max-width: 60%
+}
+
+tr.log {
+  vertical-align: top;
+}
+
+tr.log:nth-child(odd) {
+    background-color: #DDDDDD
+}
+
+table.log {
+  font-size: small;
+}
